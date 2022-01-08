@@ -1,0 +1,50 @@
+.Container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aqua;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+p{
+    font-size: larger;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+input{
+    display: flex;
+    border-radius: 10px;
+    margin: 11px;
+    padding-left: 10px;
+    font-size: larger;
+    align-items: center;
+    margin-top: 15px;
+}
+
+input:focus{
+    outline-width: 0;
+}
+
+button{
+    font-size: x-large;
+    color: white;
+    background-color: blue;
+    border-radius: 7px;
+    padding: 5px;
+    margin: 20px;
+}
+
+.rowfeild{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.colfeild{
+    display: flex;
+    flex-direction: column;
+}

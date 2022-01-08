@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import FilterSearch from "./components/FilterSearch";
+import StateWise from "./components/StateWise";
+import StudDetail from "./components/StudDetail";
+import DisplayFiltered from "./components/DisplayFiltered";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <div className="addStud">
+        <div className="studDetails">
+          <StudDetail />
+        </div>
+      </div>
+
+      <div className="displayStud">
+        <div className="stateWiseStudNo">
+          <StateWise />
+        </div>
+        <div className="filteredSearch">
+          <FilterSearch />
+        </div>
+        <div className="filteredStudentDisplay">
+          <DisplayFiltered />
+        </div>
+      </div>
+    
     </div>
   );
 }
